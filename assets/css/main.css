@@ -126,7 +126,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -163,9 +163,8 @@ input, select, textarea {
 	}
 
 	p {
-		padding: 30px 0 0 0;
-		width: 80%;
-		margin: 0 0 .5em 0;
+		padding: 5px 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 	h1 {
@@ -200,7 +199,7 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		margin: 1em 0 1em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
@@ -1539,6 +1538,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			h2 {
+				letter-spacing: 0px;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -2064,6 +2067,11 @@ input, select, textarea {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 80%;
+}
+
+#projectsTitle {
+	padding: 30px 0 15px 0;
 }
 
 /* Form */
@@ -2588,7 +2596,9 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		position: relative;
-		padding: 20px 0 50px 0;
+		align-items: center;
+		justify-content: center;
+		padding: 15px 0 20px 0;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2598,8 +2608,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
-			margin: 2.5em 0 0 2.5em;
+			width: calc(25% - 2.5em);
+			margin: .5em 0 0 .5em;
 		}
 
 			.tiles article > .image {
@@ -2714,7 +2724,10 @@ input, select, textarea {
 					width: 100%;
 					max-height: 0;
 					line-height: 1.5;
-					margin-top: 0.35em;
+					text-align: center;
+					padding: 0 0 0 0;
+					margin: 0 0 0 0;
+					/* margin-top: 0.35em; */
 					opacity: 0;
 				}
 
@@ -2768,7 +2781,7 @@ input, select, textarea {
 			}
 
 		* + .tiles {
-			margin-top: 2em;
+			margin-top: 0.2em;
 		}
 
 		body.is-preload .tiles article {
@@ -2787,11 +2800,11 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.tiles {
-				margin: -1.25em 0 0 -1.25em;
+				margin: -1.5em 0 0 -1.25em;
 			}
 
 				.tiles article {
-					width: calc(33.33333% - 1.25em);
+					width: calc(25% - 2.5em);
 					margin: 1.25em 0 0 1.25em;
 				}
 
@@ -2804,7 +2817,7 @@ input, select, textarea {
 			}
 
 				.tiles article {
-					width: calc(50% - 2.5em);
+					width: calc(35% - 2.5em);
 					margin: 2.5em 0 0 2.5em;
 				}
 
@@ -2817,7 +2830,7 @@ input, select, textarea {
 			}
 
 				.tiles article {
-					width: calc(50% - 1.25em);
+					width: calc(42% - 1.25em);
 					margin: 1.25em 0 0 1.25em;
 				}
 
@@ -2837,7 +2850,7 @@ input, select, textarea {
 			}
 
 				.tiles article {
-					width: 100%;
+					width: 50%;
 					margin: 1.25em 0 0 0;
 				}
 
@@ -3172,11 +3185,46 @@ input, select, textarea {
 		padding: 0em 0 0 0 ;
 	}
 
+	.introText {
+		text-align: center;
+		line-height: 28px;
+		padding: 0 0 35px 0;
+	}
+
 	.inner {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	}
+
+	#sqlAlch {
+		padding: 24px 0 0 0;
+	}
+
+	.skillsHolder {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 80%;
+		padding: 10px 0 35px 0;
+	}
+
+	.oneSkill {
+		margin: 0 15px 0 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.skillText {
+		text-align: center;
+		padding: 5px 0 0 0;
+		margin: 0 0 25px 0;
+		width: 100%;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -3188,6 +3236,19 @@ input, select, textarea {
 		}
 
 /* Footer */
+
+	#socialHolder {
+		display: flex;
+		flex-direction: row;
+		padding: 0 0 10px 0;
+	}
+
+	.socialLink {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	#onlinePres {
 		display: flex;
@@ -3261,7 +3322,7 @@ input, select, textarea {
 						margin-left: 0;
 					}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 981px) {
 
 			#footer {
 				padding: 2em 0 3em 0 ;
@@ -3287,7 +3348,7 @@ input, select, textarea {
 			}
 
 			#footer > .inner section:nth-child(2) {
-				width: calc(33% - 2.5em);
+				width: calc(30% - 2.5em);
 				margin-left: 2.5em;
 			}
 
