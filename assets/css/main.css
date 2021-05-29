@@ -2046,6 +2046,14 @@ input, select, textarea {
 
 /* Icons */
 
+	.icons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 15px 0 0;
+	}
+
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -3238,6 +3246,12 @@ input, select, textarea {
 
 /* Footer */
 
+	/* #emailInfo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	} */
+
 	#socialHolder {
 		display: flex;
 		flex-direction: row;
@@ -3249,6 +3263,7 @@ input, select, textarea {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 0 15px 0 15px;
 	}
 
 	#onlinePres {
@@ -3256,6 +3271,7 @@ input, select, textarea {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		padding: 0 0 20px 0;
 	}
 
 	#footer {
